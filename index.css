@@ -123,7 +123,7 @@ h6{
 }
 
 .btnActive{
-    transition: 0.5s;
+    transition: 0.75s;
     background-color: lightgreen;
     color: #353535;
     border: green 1px solid;
