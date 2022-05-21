@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge - Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="" class="logoalura">
+    </header>
+    <main>
+        <section>
+            <textarea type="text" name="" class="mensajeParaEncriptar" cols="105" rows="20" autocapitalize="none" autofocus onclick="reset()">
+                Ingrese su texto aquí:
+            </textarea>
+            <H6>
+                Nota: sólo letras minúsculas sin acentos.
+            </H6>
+            <div class="botones">
+                <button class="boton-encriptar" type="submit" onclick="btnencriptar()">
+                    Encriptar
+                </button>
+                <button class="boton-desencriptar" onclick="btndesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section>
+            <textarea type="text" name="" class="mensajeEncriptado" cols="30" rows="20"></textarea>
+            <button class="copiar" type="submit" >
+                Copiar
+            </button>
+            <span id="copyAnswer"></span>
+        </section>
+    </main>
+    <footer>
+        © Martín Rodrigo Matías - 2022
+    </footer>
+    <script src="script.js"></script>
+    <script src="boton-copiar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+*{
+    background-color: #F3F5FC;
+    font-family: 'Montserrat', sans-serif;}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.logoalura{
+    margin-top: 15px;
+}
+
+.mensajeParaEncriptar{
+    margin: 15px 40px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 34px 2px grey;
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    resize: none;
+    text-transform: lowercase;
+    text-anchor: start;
+}
+
+.mensajeEncriptado{
+    height: 430px;
+    margin: 15px 40px;
+    position: relative;
+    border-radius: 7px;
+    box-shadow: 0px 0px 34px 2px rgba(0,0,0,0.52);
+    resize: none;
+}
+
+h6{
+    margin: 20px 143px;
+    text-align: left;
+}
+
+.botones{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-encriptar{
+    padding: 24px;
+    margin: 0 10px;
+    width: 328px;
+    height: 67px;
+    border-radius: 10px;
+    color: #F3F5FC !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: #318aac;
+    position: relative;
+    border: 2px solid #318aac;
+    outline: 1px solid;
+    outline-color: rgba(49, 138, 172, 0.4);
+    transition: 1500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.boton-encriptar:hover{
+    background: #316FA6;
+    color: rgba(255, 255, 255, 1) !important;
+    font-weight: bolder;
+    box-shadow: 0 4px 16px #318aac;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.boton-desencriptar{
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    background-color: #F3F5FC;
+    color: #318aac;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    position: relative;
+    border: 2px solid #318aac;
+    outline: 1px solid;
+    outline-color: rgba(49, 138, 172, 0.4);
+    transition: 1500ms;
+}
+
+.boton-desencriptar:hover{
+    background: #F6EFF0;
+    color: #318aac!important;
+    font-weight: bolder;
+    box-shadow: 0 4px 16px #318aac;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.copiar{
+    padding: 24px;
+    margin: 20px 62px;
+    width: 200px;
+    height: auto;
+    font-weight: bold;
+    text-align: center;
+    background-color: #318aac;
+    color: #F6EFF0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    position: relative;
+    border: 2px solid #318aac;
+    outline: 1px solid;
+    outline-color: rgba(49, 138, 172, 0.4);
+    transition: 1s;
+}
+
+.copiar:hover{
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0 4px 16px #318aac;
+    transition: 0.5s;
+}
+
+.btnActive{
+    transition: 0.5s;
+    background-color: lightgreen;
+    color: #353535;
+    border: green 1px solid;
+}
+
+footer{
+    margin: 50px;
+    text-align: center;
+}
