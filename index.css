@@ -24,12 +24,20 @@ main{
 }
 
 .mensajeEncriptado{
+   display: none;
+}
+
+.mensajeEncriptadoVisible{
     height: 430px;
     margin: 15px 40px;
     position: relative;
     border-radius: 7px;
     box-shadow: 0px 0px 34px 2px rgba(0,0,0,0.52);
     resize: none;
+}
+
+.imagenesocultas{
+    display: none;
 }
 
 h6{
@@ -93,6 +101,10 @@ h6{
     box-shadow: 0 4px 16px #318aac;
     border: 1px solid black;
     cursor: pointer;
+}
+
+.botonCopiar{
+    display: none;
 }
 
 .copiar{
