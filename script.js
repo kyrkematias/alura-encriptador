@@ -1,7 +1,7 @@
-const inputTexto = document.querySelector(.mensajeParaEncriptar);
-const mensajeEncriptado = document.querySelector(.mensajeEncriptado);
-const imagenMuneco = document.querySelector(#muneco);
-const imagenFrame5 = document.querySelector(#frame5);
+const inputTexto = document.querySelector(".mensajeParaEncriptar");
+const mensajeEncriptado = document.querySelector(".mensajeEncriptado");
+const imagenMuneco = document.querySelector("#muneco");
+const imagenFrame5 = document.querySelector("#frame5");
 
 function btnencriptar(){
     const textoEncriptado = encriptar(inputTexto.value);
