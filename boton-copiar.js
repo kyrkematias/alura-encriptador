@@ -34,3 +34,4 @@ function reset(){
     areaDeTexto.value = "";
 }
 
+
