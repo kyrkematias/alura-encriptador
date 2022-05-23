@@ -6,18 +6,18 @@ const imagenFrame5 = document.querySelector(#frame5);
 function btnencriptar(){
     const textoEncriptado = encriptar(inputTexto.value);
     mensajeEncriptado.value = textoEncriptado;
-    mensajeEncriptado.classList.remove(mensajeEncriptado);
-    mensajeEncriptado.classList.add(mensajeEncriptadoVisible);
-    imagenMuneco.classList.add(imagenesocultas);
-    imagenFrame5.classList.add(imagenesocultas);
-    copy.classList.remove(botonCopiar);
-    copy.classList.add(copiar);
+    mensajeEncriptado.classList.remove("mensajeEncriptado");
+    mensajeEncriptado.classList.add("mensajeEncriptadoVisible");
+    imagenMuneco.classList.add("imagenesocultas");
+    imagenFrame5.classList.add("imagenesocultas");
+    copy.classList.remove("botonCopiar");
+    copy.classList.add("copiar");
 }
 
 function encriptar(stringParaEncriptar){
-    let matrizCodigo = [[e, enter],[i, imes],[a, ai],[o, ober],[u, ufat]];
+    let matrizCodigo = [["e", "enter"],["i", "imes"],["a", "ai"],["o", "ober"],["u", "ufat"]];
     stringParaEncriptar = stringParaEncriptar.toLowerCase();
-    for(let i = 0; i  matrizCodigo.length; i++){
+    for(let i = 0; i < matrizCodigo.length; i++){
         if(stringParaEncriptar.includes(matrizCodigo[i][0])){
             stringParaEncriptar = stringParaEncriptar.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
         }
@@ -28,18 +28,18 @@ function encriptar(stringParaEncriptar){
 function btndesencriptar(){
     const textoDesencriptado = desencriptar(inputTexto.value);
     mensajeEncriptado.value = textoDesencriptado;
-    mensajeEncriptado.classList.remove(mensajeEncriptado);
-    mensajeEncriptado.classList.add(mensajeEncriptadoVisible);
-    imagenMuneco.classList.add(imagenesocultas);
-    imagenFrame5.classList.add(imagenesocultas);
-    copy.classList.remove(botonCopiar);
-    copy.classList.add(copiar);
+    mensajeEncriptado.classList.remove("mensajeEncriptado");
+    mensajeEncriptado.classList.add("mensajeEncriptadoVisible");
+    imagenMuneco.classList.add("imagenesocultas");
+    imagenFrame5.classList.add("imagenesocultas");
+    copy.classList.remove("botonCopiar");
+    copy.classList.add("copiar");
 }
 
 function desencriptar(stringParaDesencriptar){
-    let matrizCodigo = [[enter, e],[imes, i],[ai, a],[ober, o],[ufat, u]];
+    let matrizCodigo = [["enter", "e"],["imes", "i"],["ai", "a"],["ober", "o"],["ufat", "u"]];
     stringParaDesencriptar = stringParaDesencriptar.toLowerCase();
-    for(let i = 0; i  matrizCodigo.length; i++){
+    for(let i = 0; i < matrizCodigo.length; i++){
         if(stringParaDesencriptar.includes(matrizCodigo[i][0])){
             stringParaDesencriptar = stringParaDesencriptar.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
         }
