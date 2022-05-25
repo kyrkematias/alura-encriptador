@@ -32,6 +32,8 @@ copy.addEventListener('click', function(e) {
 
 function reset(){
     areaDeTexto.value = "";
+    spanError.classList.remove("spanVisible");
+    spanError.classList.add("span");
 }
 
 
