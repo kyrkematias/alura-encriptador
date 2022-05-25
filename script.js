@@ -16,6 +16,7 @@ function btnencriptar(){
     if(inputTexto.value == ""){
         spanError.classList.remove("span");
         spanError.classList.add("spanVisible");
+        mensajeEncriptado.value = "UPS! REVISA TU MENSAJE"
     } else {
         spanError.classList.remove("spanVisible");
         spanError.classList.add("span");
@@ -45,9 +46,11 @@ function btndesencriptar(){
     if(inputTexto.value == ""){
         spanError.classList.remove("span");
         spanError.classList.add("spanVisible");
+        mensajeEncriptado.value = "UPS! REVISA TU MENSAJE"
     } else {
         spanError.classList.remove("spanVisible");
         spanError.classList.add("span");
+        
     }
 }
 
