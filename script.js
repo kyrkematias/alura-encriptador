@@ -2,6 +2,7 @@ const inputTexto = document.querySelector(".mensajeParaEncriptar");
 const mensajeEncriptado = document.querySelector(".mensajeEncriptado");
 const imagenMuneco = document.querySelector("#muneco");
 const imagenFrame5 = document.querySelector("#frame5");
+const spanError = document.querySelector(".span");
 
 function btnencriptar(){
     const textoEncriptado = encriptar(inputTexto.value);
@@ -12,6 +13,13 @@ function btnencriptar(){
     imagenFrame5.classList.add("imagenesocultas");
     copy.classList.remove("botonCopiar");
     copy.classList.add("copiar");
+    if(inputTexto.value == ""){
+        spanError.classList.remove("span");
+        spanError.classList.add("spanVisible");
+    } else {
+        spanError.classList.remove("spanVisible");
+        spanError.classList.add("span");
+    }
 }
 
 function encriptar(stringParaEncriptar){
@@ -34,6 +42,13 @@ function btndesencriptar(){
     imagenFrame5.classList.add("imagenesocultas");
     copy.classList.remove("botonCopiar");
     copy.classList.add("copiar");
+    if(inputTexto.value == ""){
+        spanError.classList.remove("span");
+        spanError.classList.add("spanVisible");
+    } else {
+        spanError.classList.remove("spanVisible");
+        spanError.classList.add("span");
+    }
 }
 
 function desencriptar(stringParaDesencriptar){

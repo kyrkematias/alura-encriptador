@@ -59,12 +59,23 @@ h1{
     height: 341px;
 }
 
+.munecoVisible{
+    width: auto;
+    height: 341px;
+}
+
+.frame5Visible{
+    
+}
+
 .imagenesocultas{
     display: none;
 }
 
 h6{
-    margin: 20px 143px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 143px;
     text-align: left;
 }
 
@@ -183,4 +194,17 @@ footer{
 
 .socialmedia:hover{
     transform: scale(105%);
+}
+
+.span{
+    display: none;
+}
+
+.spanVisible{
+    position: relative;
+    margin: 20px 143px;
+    color: red;
+    text-align: end;
+    font-size: 14px;
+    font-weight: bold;
 }
